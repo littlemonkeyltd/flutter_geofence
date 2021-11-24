@@ -163,8 +163,6 @@ class FlutterGeofencePlugin : FlutterPlugin, MethodCallHandler, ActivityAware, P
     override fun onAttachedToActivity(binding: ActivityPluginBinding) {
         currentActivity = binding.activity
         binding.addRequestPermissionsResultListener(this)
-
-        requestPermissions()
     }
 
     override fun onDetachedFromActivityForConfigChanges() {
